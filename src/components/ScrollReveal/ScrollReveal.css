@@ -1,0 +1,17 @@
+/* Adapted from React Bits ScrollReveal (MIT, github.com/DavidHDev/react-bits).
+   Font sizes inherit from the page — only the word mechanics stay. */
+.scroll-reveal {
+  margin: 6px 0 20px;
+}
+
+.scroll-reveal-text {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.word {
+  display: inline-block;
+}

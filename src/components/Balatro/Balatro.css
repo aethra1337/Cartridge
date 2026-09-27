@@ -1,0 +1,12 @@
+/* Adapted from React Bits Balatro (MIT, github.com/DavidHDev/react-bits). */
+.balatro-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.balatro-container canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

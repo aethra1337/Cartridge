@@ -1,0 +1,66 @@
+.share-modal {
+  max-width: 460px;
+}
+
+.share-preview {
+  background: #000;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.share-big {
+  margin: 8px 0 0;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.share-big span {
+  font-size: 18px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.share-mid {
+  margin: 0 0 10px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.share-preview ol {
+  margin: 0 0 10px;
+  padding-left: 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.share-line {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.share-top {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  font-size: 12.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.share-top span {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.share-source {
+  margin: 10px 0 0;
+  font-size: 11px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}

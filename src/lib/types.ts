@@ -1,0 +1,4 @@
+export interface AudioFeatures { danceability: number; energy: number; valence: number; tempo: number; acousticness: number; instrumentalness: number; liveness: number; loudness: number; speechiness: number; key: number; mode: number; timeSignature: number; durationMs: number }
+export interface Track { id: string; uri: string; name: string; artist: string; artistGenres: string[]; album: string; albumImageUrl: string | null; releaseDate: string | null; year: number | null; decade: string | null; previewUrl: string | null; addedAt: string; popularity: number; explicit: boolean; durationMs: number; audioFeatures?: AudioFeatures }
+/** User-defined bin rule: a track matches when any of its Spotify genres contains any keyword. */
+export interface CustomBinRule { id: string; label: string; keywords: string[] }

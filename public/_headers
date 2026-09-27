@@ -1,0 +1,10 @@
+# Never cache the service worker — otherwise updates get stuck behind old shells.
+/sw.js
+  Cache-Control: no-cache
+
+# Security headers (mirrors vercel.json for non-Vercel hosts).
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
