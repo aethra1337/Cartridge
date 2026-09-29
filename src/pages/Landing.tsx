@@ -361,7 +361,7 @@ export default function Landing() {
         <p>{t('footerNote')}</p>
         <nav>
           <Link to="/app">{t('studio')}</Link>
-          <a href="https://github.com/anomalyco/opencode" target="_blank" rel="noreferrer">{t('feedback')}</a>
+          <a href="https://github.com/aethra1337/Cartridge/issues" target="_blank" rel="noreferrer">{t('feedback')}</a>
         </nav>
       </footer>
     </main>
