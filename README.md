@@ -73,24 +73,6 @@ npm run dev
   production builds). Static shell works offline; Spotify data always
   comes fresh from the network.
 
-## Deploy notes
-
-### Cloudflare Pages (free)
-
-1. Push this repo to GitHub.
-2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git**,
-   select the repo.
-3. Build settings: **Framework preset** `Vite` (build `npm run build`,
-   output `dist`). SPA fallback needs no extra config — `public/_redirects`
-   (`/* → /index.html`) and `public/_headers` are picked up automatically.
-4. **Environment variables** (production): set both, then **Retry deployment**
-   (env vars bake in at build time):
-   - `VITE_SPOTIFY_CLIENT_ID` = your Client ID
-   - `VITE_SPOTIFY_REDIRECT_URI` = `https://<your-pages-url>/callback`
-5. Spotify dashboard → add `https://<your-pages-url>/callback` to Redirect URIs.
-
-HTTPS comes free with Pages, so login works with no localhost tricks.
-
 ### Other hosts
 
 The app uses browser routing, so static hosts need an SPA fallback to
